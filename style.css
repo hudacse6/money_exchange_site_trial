@@ -1,0 +1,568 @@
+/* global css start here  */
+body{
+  /* background-color:; */
+}
+
+/* Start: This is for "Check Today's Exchange Rate" CSS */
+.do_money_exchange {
+  background-color: beige;
+  width: 100%;
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+  "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+  text-align: center;
+  display: inline-block;
+}
+#shadow_div{
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  text-align: center;
+  max-width: 520px;
+  display: inline-block;
+}
+.s1 {
+  margin: 0 10px 0 0;
+  display: inline-block;
+}
+
+.s2 {
+  display: inline-block;
+  margin-left: 10px;
+}
+
+.btn input {
+  /* border: 3px solid black; */
+  background-clip: border-box;
+  background-color: firebrick;
+  color: white;
+  border-radius: 12px;
+  display: inline;
+  outline: double;
+  outline-color: antiquewhite;
+  font-size: medium;
+}
+
+.l1,
+.l2 {
+  display: block;
+  float: left;
+  padding: 0 0 5px 0;
+}
+
+#result {
+    /* margin: 0px 5px 10px 10px;
+    padding: 0px 5px 10px 0; */
+    color: darkmagenta;
+    font-family:cursive;
+    font-size: large;
+    font-weight: bold;
+    font-variant: small-caps;
+  }
+  /* End: This is for "Check Today's Exchange Rate" CSS */
+
+  /* Start: This is for "Start Exchange Now" CSS */
+  .main_op{
+    background-color: aliceblue;
+    overflow-y: hidden;
+    overflow-x: hidden;
+    box-shadow: none;
+    background-origin: padding-box;
+    padding: 5px;
+    text-align: center;
+    /* display: inline-block; */
+  }
+
+
+  .op1, .op2 {
+    background-color: aliceblue;
+    padding: 10px;
+    margin: 5px;
+    border: 5px;
+    /* scroll-behavior:avoid; */
+    text-decoration: none;
+    text-justify: auto;
+    font-size: larger;
+    font-family: 'Courier New', Courier, monospace, 'Times New Roman', Times, serif;
+    overflow: hidden;
+    height: 320px;
+    width: 500px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    /* text-align: center;   */
+  }
+
+/* #s2{
+  background-color: azure;
+  } */
+  option{
+    padding: 2px;
+    font-family:'Times New Roman', Times, serif;
+  }
+
+
+
+  option:hover{
+    background-color:lightyellow;
+  }
+  /* End: This is for "Start Exchange Now" CSS */
+
+  #marquee_1{
+    background-color: burlywood;
+
+  }
+
+
+  /* start navbar css file  */
+  body {
+    margin: 0;
+    position: relative;
+  }
+
+  .navbar {
+    /*overflow: hidden;*/
+    /*background-color: #333;*/
+    position: sticky; /*Set the navbar to fixed position */
+    top: 0; /*Position the navbar at the top of the page */
+    width: 100%; /*Full width */
+  }
+
+/* h4 {
+  top: 0;
+  left: 0;
+  margin: 0;
+  padding: 0;
+  } */
+
+  .navbar ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: darkcyan;
+  }
+
+  li {
+    float: left;
+  }
+
+  li a, .dropbtn {
+    display: inline-block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+  }
+
+  li a:hover, .dropdown:hover .dropbtn {
+    background-color: gray;
+  }
+
+  li.dropdown {
+    display: inline-block;
+    /* position: relative; */
+  }
+
+  .dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #444444;
+    /*min-width: 102px;*/
+    /*box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);*/
+    /*z-index: 1;*/
+  }
+
+  .dropdown-content a {
+    color: white;
+    /*padding: 12px 16px;*/
+    text-decoration: none;
+    display: block;
+    /*float: left;*/
+    text-align: left;
+    width: border-box;
+  }
+
+  .dropdown-content a:hover {
+    background-color: gray;
+  }
+
+  .dropdown:hover .dropdown-content {
+    display: block;
+
+  }
+
+  #sty {
+    border: 2px solid cadetblue;
+    border-radius: 50px;
+    outline: none;
+  }
+
+  #nohvr {
+    background-color: unset !important;
+  }
+
+  /* end navbar css file */
+
+  /* start user rating css file */
+
+
+  .user_rating{
+    font: Georgia;
+    font-weight: normal;
+    margin: 0 auto;
+    max-width: 800px;
+    padding: 20px;
+    letter-spacing: 2px;
+    text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.5);
+    /* width: 100%; */
+  }
+
+  .heading {
+    font-size: 28px;
+    margin-right: 25px;
+    font-size: 25px;
+    /* background-color:rgb(211, 211, 211); */
+    color: brown;
+    font-weight: normal;
+    font: 18pt Georgia;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.5);
+  }
+
+  .fa {
+    font-size: 25px;
+  }
+
+  .checked {
+    color: orange;
+  }
+
+  /* Three column layout */
+  .side {
+    float: left;
+    width: 15%;
+    margin-top:10px;
+  }
+
+  .middle {
+    margin-top:10px;
+    float: left;
+    width: 70%;
+  }
+
+  /* Place text to the right */
+  .right {
+    text-align: right;
+  }
+
+  /* Clear floats after the columns */
+  .row:after {
+    content: "";
+    display: table;
+    clear: both;
+  }
+
+  /* The bar container */
+  .bar-container {
+    width: 100%;
+    background-color: #f1f1f1;
+    text-align: center;
+    color: white;
+  }
+
+  /* Individual bars */
+  .bar-5 {width: 60%; height: 18px; background-color: #4CAF50;}
+  .bar-4 {width: 30%; height: 18px; background-color: #2196F3;}
+  .bar-3 {width: 10%; height: 18px; background-color: #00bcd4;}
+  .bar-2 {width: 4%; height: 18px; background-color: #ff9800;}
+  .bar-1 {width: 15%; height: 18px; background-color: #f44336;}
+
+  /* Responsive layout - make the columns stack on top of each other instead of next to each other */
+  @media (max-width: 400px) {
+    .side, .middle {
+      width: 100%;
+    }
+    .right {
+      display: none;
+    }
+  }
+
+  /* End user rating css file  */
+
+
+  /* start user commenting area css here  */
+  .user_commenting_section{
+    display: inline-block;
+    background-color: rgb(149, 178, 179);
+    width: 100%;
+  }
+
+
+  .main_div{
+    margin: 0 0 0 40px;
+  }
+
+  .heading2 {
+    font-size: 25px;
+    margin-left: 60px;
+    /* background-color:rgb(211, 211, 211); */
+    color: brown;
+    font-weight: normal;
+    font: 20pt Georgia;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.5);
+  }
+
+  .container {
+    border: 2px solid #ccc;
+    background-color: #eee;
+    border-radius: 5px;
+    padding: 16px;
+    margin: 16px 5px 10px 20px;
+    float: left;
+    text-align: center;
+  }
+
+  .container::after {
+    content: "";
+    clear: both;
+    display: table;
+  }
+
+  .container img {
+    float: left;
+    margin-right: 20px;
+    border-radius: 50%;
+  }
+
+  .container span {
+    font-size: 20px;
+    margin-right: 15px;
+  }
+
+  @media (max-width: 400px) {
+    .container {
+      text-align: center;
+    }
+    .container img {
+      margin: auto;
+      float: none;
+      display: block;
+    }
+  }
+
+  .container, p a{
+    text-decoration: none;
+  }
+
+  /* End user commenting area css  */
+
+  /* start footer css file  */
+  /* start copy paste foooter css file too */
+
+  .footer_css{
+    background-color: cadetblue;
+  }
+
+  .icon_bg_color{
+    background-color:cadetblue;
+  }
+
+  .social_icons{
+    size: 500px;
+    text-align: center;
+  }
+  span.s_i{
+  /* font-size: larger;
+  color: blueviolet; */
+  font-size: 25px;
+  margin-left: 60px;
+  /* background-color:rgb(211, 211, 211); */
+  color: brown;
+  font-weight: normal;
+  font: 20pt Georgia;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.5);
+}
+
+i.fab {
+  display: inline-block;
+  border-radius: 60px;
+  box-shadow: 0px 0px 2px #888;
+  padding: 5px ;
+  margin: 5px 0 0 0 ;
+}
+i.fab:hover{
+  color: #00bcd4;
+}
+
+/* start copy paste foooter css file  */
+body{
+  /* background: #215A6D; */
+  font: 12pt Georgia;
+  /* color: #f2f2f2; */
+  margin: 0;
+  padding: 0;
+}
+
+a{
+  /* color: #f2f2f2; */
+  text-decoration: none;
+}
+
+#footer{
+  margin-bottom: -150px;
+  clear: both;
+}
+
+
+#tomotto{
+  text-align: center;
+  width: 100%;
+  letter-spacing: 2px;
+  text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.5);
+  line-height: 36px;
+  margin: auto;
+}
+
+.lookWrap{
+  /* position: relative;  */
+  /* background-color: #215A6D; */
+  float: left;
+  width: 100%;
+  /* background-color: #4CAF50; */
+}
+
+#look{
+  text-align: center;
+}
+.section{
+  overflow: hidden;
+  display: inline-block;
+  width: 160px;
+  margin: 0 15px 15px 0;
+  font: 10pt verdana;
+  line-height: 1.6em;
+/* 
+background-color: #00bcd4; */
+}
+
+.section h3{
+  font-weight: normal;
+  font: 12pt Georgia;
+  text-transform: uppercase;
+  color: black ;
+  text-align: left;
+}
+
+.section a{
+  display: block;
+  text-align: left;
+
+}
+
+.legality{
+  text-align: left;
+  width: 100%;
+  letter-spacing: 2px;
+  text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.5);
+  line-height: 36px;
+  margin: auto;
+}
+
+.legality{
+  float: left;
+  text-align: center;
+  background-color:cadetblue;
+}
+
+/* end copy paste foooter css file  */
+
+/* End footer css file  */
+
+/* start complete_pending_cancel css file  */
+
+span.ccp_heading{
+  display: block;
+  font: 20pt Georgia;
+  color: brown;
+  font-weight: normal;
+  /* margin-left:20px; */
+  text-transform: uppercase;
+  text-align: center;
+  /* it will chage the user rating body area */
+  /* max-width: 800px;  */
+  /* padding: 20px; */
+  letter-spacing: 2px;
+  text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.5);
+  background-color:#ccc;
+}
+
+table {
+  width:100%;
+}
+table, th, td {
+  border-collapse: collapse;
+  /* border: 1px solid darkgray; */
+}
+th, td {
+  padding: 15px;
+  text-align: left;
+}
+
+.table_head{
+  background-color:rgb(211, 211, 211);
+  color: brown;
+  font-weight: normal;
+  font: 12pt Georgia;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.5);
+}
+
+.payment_complete{
+  background-color: rgba(226, 220, 220, 0.801);
+  color: #2fb805;
+  font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif
+}
+
+.payment_pending{
+  background-color:rgba(226, 220, 220, 0.470);
+  color:yellowgreen;
+  font-family: Georgia, 'Times New Roman', Times, serif;
+}
+.payment_cancelled{
+  background-color: rgba(226, 220, 220, 0.200);
+  color: crimson;
+  font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+#t01{
+  font-weight: bold;
+}
+
+/* end complete_pending_cancel css file  */
+
+/* start find_call_mail css file  */
+
+.find_call_mail {
+  display: inline-block;
+  text-align: center;
+  /* padding: 6px; */
+  background-color:cadetblue;
+  width: 100%;
+}
+
+.cta-text{
+  /* background-color: aquamarine; */
+  display: inline-block;
+  padding: 0 20px 10px ;
+  margin: 0 200px 0 0 ;
+  text-align: left;
+}
+
+.cta-text ul i{
+  float: left;
+  padding-right: 10px;
+}
+
+/* end find_call_mail css file  */

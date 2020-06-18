@@ -1,0 +1,443 @@
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Document</title>
+  <link rel="stylesheet" href="style.css" />
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <link
+  rel="stylesheet"
+  href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+  />
+  <script src="https://kit.fontawesome.com/a076d05399.js"></script>
+  <!-- Font Awesome Icon Library -->
+  <link
+  rel="stylesheet"
+  href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+</head>
+/>
+
+<body>
+  <div class="navbar">
+    <ul>
+      <li>
+        <a id="nohvr" href="/"><i class="fas fa-home"></i></a>
+      </li>
+      <li><a href="#news">About Us</a></li>
+      <li class="dropdown">
+        <a href="javascript:void(0)" class="dropbtn">Live Dashboard</a>
+        <div class="dropdown-content">
+            <!-- <a href="#">Words</a>
+            <a href="#">Link 2</a>
+            <a href="#">Link 3</a> -->
+          </div>
+        </li>
+        <li style="float: right;">
+          <a id="nohvr" href="#"
+          ><label><input id="sty" type="search" /></label>Search</a
+          >
+        </li>
+        <li class="dropdown">
+          <a href="javascript:void(0)" class="dropbtn">Our Services</a>
+          <div class="dropdown-content">
+            <!-- <a href="#">Link 1</a>
+            <a href="#">Link 2</a>
+            <a href="#">Link 3</a> -->
+          </div>
+        </li>
+        <li class="dropdown">
+          <a href="javascript:void(0)" class="dropbtn">Terms, and Conditions</a>
+          <div class="dropdown-content">
+            <!-- <a href="#">Link 1</a>
+            <a href="#">Link 2</a>
+            <a href="#">Link 3</a> -->
+          </div>
+        </li>
+        <li style="float: right;" id="li_two">
+          <a href="accounts/register"><i class="fas fa-user-plus fa-sm"></i> SignUp</a>
+        </li>
+        <li style="float: right;" id="li_two">
+          <a href="accounts/login"><i class="fas fa-fw fa-user fa-sm"></i> login</a>
+        </li>
+      </ul>
+    </div>
+
+    <div id="marquee_1">
+      <marquee
+      behavior="scroll"
+      direction="left"
+      onmouseover=" this.stop()"
+      onmouseout="this.start()"
+      >
+      <h2>This is marquee site for emergency notice shown</h2></marquee
+      >
+    </div>
+
+    <div class="do_money_exchange">
+      <div id="shadow_div">
+        <h3>Check Today's Exchange Rate</h3>
+        <div class="s">
+          <label>Enter Amount</label><br />
+          <input
+          type="text"
+          id="amount"
+          placeholder="Enter amount......"
+          /><br /><br />
+        </div>
+
+        <div class="s1">
+          <label class="l1">Send</label><br />
+          <select id="select1">
+            <option value="bKash">bKash</option>
+            <option value="Paypal">Paypal</option>
+            <option value="Skrill">Skrill</option>
+            <option value="Rocket">Rocket</option>
+            <option value="Netellar">Netellar</option>
+            <option value="Perfect_money">Perfect_money</option>
+          </select>
+        </div>
+
+        <div class="s2">
+          <label class="l2">Receive</label><br />
+          <select id="select2">
+            <option value="bKash">bKash</option>
+            <option value="Paypal" selected>Paypal</option>
+            <option value="Skrill">Skrill</option>
+            <option value="Rocket">Rocket</option>
+            <option value="Netellar">Netellar </option>
+            <option value="Perfect_money">Perfect_money </option>
+          </select>
+        </div>
+        <br /><br /><br />
+        <div id="result"></div>
+        <div class="btn">
+          <br />
+          <input type="button" onClick="calculation()" value="Exchange" />
+        </div>
+        <br />
+      </div>
+    </div>
+
+    <div class="main_op">
+      <h3>Start Exchange Now</h3>
+      <div class="second_op">
+        <select class="op1" name="s1" id="s1" multiple>
+          <option value="one" disabled selected>Choose an option</option>
+          <option value="1">bKash</option>
+          <option value="2">Rocket</option>
+          <option value="3">Nogod</option>
+          <option value="4">Paypal</option>
+          <option value="5">Skrill</option>
+          <option value="6">Netellar</option>
+          <option value="7">Perfect_money</option>
+          <option value="8">Bit_Coin</option>
+          <option value="9">Payeer</option>
+          <option value="9">Web-money</option>
+        </select>
+
+        <select
+        class="op2"
+        name="s2"
+        id="s2"
+        onchange="javascript:handleSelect(this)"
+        multiple
+        >
+        <option value="1">bKash</option>
+        <option value="2">Rocket</option>
+        <option value="3">Nogod</option>
+        <option value="1">Dbbl_Bank_Account</option>
+        <option value="2">Dbbl_Bank_Account</option>
+        <option value="3">Dbbl_Bank_Account</option>
+        <option value="1">Brack_Bank_Account</option>
+        <option value="2">Brack_Bank_Account</option>
+        <option value="3">Brack_Bank_Account</option>
+        <option value="1">Eastern_Bank</option>
+        <option value="2">Eastern_Bank</option>
+        <option value="3">Eastern_Bank</option>
+        <option value="4">Paypal</option>
+        <option value="5">Skrill</option>
+        <option value="6">Netellar</option>
+        <option value="7">Perfect_money</option>
+        <option value="8">Bit_Coin</option>
+        <option value="9">Payeer</option>
+        <option value="9">Web-money</option>
+      </select>
+    </div>
+  </div>
+
+  <div class="ccp">
+    <span class="ccp_heading"> <u>Live Exchange Board </u> </span>
+    <table id="t01">
+      <tr class="table_head">
+        <th><i class="fas fa-user"></i> Username</th>
+        <th><i class="fas fa-paper-plane"></i> Send</th>
+        <th><i class="fas fa-hand-holding-usd"></i> Receive</th>
+        <th><i class='fas fa-exclamation'></i> Status</th>
+      </tr>
+      <tr class="payment_complete">
+        <td><i class="fas fa-spinner fa-pulse"></i> Hadisur rahman</td>
+        <td>bKash- 2000tk</td>
+        <td>Paypal- 18$</td>
+        <td  style="color: #2fb805;"> <i class="far fa-check-circle fa-sm"></i>  Completed</td>
+      </tr>
+
+      <tr class="payment_complete">
+        <td><i class="fas fa-spinner fa-pulse"></i> Hadisur rahman</td>
+        <td>bKash- 2000tk</td>
+        <td>Paypal- 18$</td>
+        <td  style="color: #2fb805;"> <i class="far fa-check-circle fa-sm"></i>  Completed</td>
+      </tr>
+      <tr class="payment_complete">
+        <td><i class="fas fa-spinner fa-pulse"></i> Hadisur rahman</td>
+        <td>bKash- 2000tk</td>
+        <td>Paypal- 18$</td>
+        <td  style="color: #2fb805;"> <i class="far fa-check-circle fa-sm"></i>  Completed</td>
+      </tr>
+      <tr class="payment_pending">
+        <td><i class="fas fa-spinner fa-pulse"></i> Hadisur rahman</td>
+        <td>bKash- 2000tk</td>
+        <td>Paypal- 18$</td>
+        <td style="color:yellowgreen;"> <i class="far fa-clock fa-sm "></i> Pending</td>
+      </tr>
+      <tr class="payment_pending">
+        <td><i class="fas fa-spinner fa-pulse"></i> Hadisur rahman</td>
+        <td>bKash- 2000tk</td>
+        <td>Paypal- 18$</td>
+        <td style="color:yellowgreen;"> <i class="far fa-clock fa-sm "></i> Pending</td>
+      </tr>
+      <tr class="payment_pending">
+        <td><i class="fas fa-spinner fa-pulse"></i> Hadisur rahman</td>
+        <td>bKash- 2000tk</td>
+        <td>Paypal- 18$</td>
+        <td style="color:yellowgreen;"> <i class="far fa-clock fa-sm "></i> Pending</td>
+      </tr>
+
+      <tr class="payment_cancelled">
+        <td><i class="fas fa-spinner fa-pulse"></i> Hadisur rahman</td>
+        <td>bKash- 2000tk</td>
+        <td>Paypal- 18$</td>
+        <td style="color: crimson;"> <i class="fas fa-trash-alt fa-sm "></i>  Cancelled</td>
+      </tr>
+      <tr class="payment_cancelled">
+        <td><i class="fas fa-spinner fa-pulse"></i> Hadisur rahman</td>
+        <td>bKash- 2000tk</td>
+        <td>Paypal- 18$</td>
+        <td style="color: crimson;"> <i class="fas fa-trash-alt fa-sm "></i>  Cancelled</td>
+      </tr>
+      <tr class="payment_cancelled">
+        <td><i class="fas fa-spinner fa-pulse"></i> Hadisur rahman</td>
+        <td>bKash- 2000tk</td>
+        <td>Paypal- 18$</td>
+        <td style="color: crimson;"> <i class="fas fa-trash-alt fa-sm "></i>  Cancelled</td>
+      </tr>
+    </table>
+  </div>
+
+
+  <div class="user_rating">
+    <span class="heading">Users' Rating</span>
+    <span class="fa fa-star checked"></span>
+    <span class="fa fa-star checked"></span>
+    <span class="fa fa-star checked"></span>
+    <span class="fa fa-star checked"></span>
+    <span class="fa fa-star"></span>
+    <p>4.1 average based on 254 reviews.</p>
+    <hr style="border: 3px solid #f1f1f1;" />
+
+    <div class="row">
+      <div class="side">
+        <div>5 star</div>
+      </div>
+      <div class="middle">
+        <div class="bar-container">
+          <div class="bar-5"></div>
+        </div>
+      </div>
+      <div class="side right">
+        <div>150</div>
+      </div>
+      <div class="side">
+        <div>4 star</div>
+      </div>
+      <div class="middle">
+        <div class="bar-container">
+          <div class="bar-4"></div>
+        </div>
+      </div>
+      <div class="side right">
+        <div>63</div>
+      </div>
+      <div class="side">
+        <div>3 star</div>
+      </div>
+      <div class="middle">
+        <div class="bar-container">
+          <div class="bar-3"></div>
+        </div>
+      </div>
+      <div class="side right">
+        <div>15</div>
+      </div>
+      <div class="side">
+        <div>2 star</div>
+      </div>
+      <div class="middle">
+        <div class="bar-container">
+          <div class="bar-2"></div>
+        </div>
+      </div>
+      <div class="side right">
+        <div>6</div>
+      </div>
+      <div class="side">
+        <div>1 star</div>
+      </div>
+      <div class="middle">
+        <div class="bar-container">
+          <div class="bar-1"></div>
+        </div>
+      </div>
+      <div class="side right">
+        <div>20</div>
+      </div>
+    </div>
+  </div>
+
+  <div class="user_commenting_section">
+    <span class="heading2">Users' Commenting & Satisfaction </span>
+    <div class="main_div">
+      <div class="container">
+        <img src="image/bandmember.jpg" alt="Avatar" style="width: 90px;" />
+        <p><span>Chris Fox.</span> CEO at Mighty Schools.</p>
+        <p style="float: left;">John Doe saved us from a web disaster.</p>
+      </div>
+
+      <div class="container">
+        <img src="image/avatar_g2.jpg" alt="Avatar" style="width: 90px;" />
+        <p><span>Rebecca Flex.</span> CEO at Company.</p>
+        <p style="float: left;">No one is better than John Doe.</p>
+      </div>
+
+      <div class="container">
+        <img src="image/bandmember.jpg" alt="Avatar" style="width: 90px;" />
+        <p><span>Chris Fox.</span> CEO at Mighty Schools.</p>
+        <p style="float: left;">John Doe saved us from a web disaster.</p>
+      </div>
+
+      <div class="container">
+        <img src="image/download.jpeg" alt="Avatar" style="width: 90px;" />
+        <p><span>Rebecca Flex.</span> CEO at Company.</p>
+        <p style="float: left;">No one is better than John Doe.</p>
+      </div>
+
+      <div class="container">
+        <img src="image/bandmember.jpg" alt="Avatar" style="width: 90px;" />
+        <p>
+          <a href="#"><span>Chris Fox.</span></a
+            >CEO at Mighty Schools.
+          </p>
+          <p style="float: left;">John Doe saved us from a web disaster.</p>
+        </div>
+
+        <div class="container">
+          <img src="image/bandmember.jpg" alt="Avatar" style="width: 90px;" />
+          <p>
+            <a href="#"><span>Chris Fox.</span></a
+              >CEO at Mighty Schools.
+            </p>
+            <p style="float: left;">John Doe saved us from a web disaster.</p>
+          </div>
+
+        </div>
+
+      </div>
+
+      <div class="find_call_mail">
+        <div class="cta-text">
+          <ul> <i class="fas fa-map-marker-alt fa-5x"></i> </ul>
+          <h4>Find Us</h4>
+          <span>532, Jahangir Sarani, Talaimari, Rajshahi-6204 </span>
+        </div>
+
+        <div class="cta-text">
+          <ul> <i class="fas fa-phone-volume fa-5x"></i> </ul>
+          <h4>Call Us</h4>
+          <span> +880 1745-969697 / +880 1559 434383</span>
+        </div>
+
+        <div class="cta-text">
+          <ul> <i class="fas fa-envelope-open-text fa-5x"></i> </ul>
+          <h4>Mail Us</h4>
+          <span>e_taka@exhange.com.bd  e_taka@exhange.com.bd</span>
+        </div>
+      </div>
+
+      <footer class="footer_css" style="float: left; width: 100%;">
+        <hr />
+        <div class="social_icons">
+          <span class="s_i">Follow Us on</span>
+          <ul class="icon_bg_color">
+            <a href="#"> <i class="fab fa-twitter fa-2x"></i></a>
+            <a href="#"> <i class="fab fa-facebook fa-2x"></i></a>
+            <a href="#"> <i class="fab fa-whatsapp fa-2x"></i></a>
+            <a href="#"> <i class="fab fa-viber fa-2x"></i></a>
+            <a href="#"> <i class="fab fa-instagram fa-2x"></i></a>
+            <a href="#"><i class="fab fa-facebook-messenger fa-2x"></i></i></a>
+          </ul>
+        </div>
+        <hr />
+
+        <div id="footer">
+          <div class="tomottoWrap">
+            <div id="tomotto">
+              “In such seconds of decision entire futures are made.” 
+              ― Dan Simmons, Hyperion
+            </div>
+          </div>
+
+          <div class="lookWrap">
+            <div id="look">
+              <div class="section">
+                <h3>Support</h3>
+                <a href="#">FAQs</a>
+                <a href="#">Contact Us</a>
+                <a href="#">Privacy Policy</a>
+                <a href="#">Shipping Information</a>
+                <a href="#">Return Policy</a>
+                <a href="#">Item Exchange</a>
+                <a href="#">Cash Back Rewards</a>
+              </div>
+              <div class="section">
+                <h3>Give & Take</h3>
+                <a href="#">Gift Certificates</a>
+                <a href="#">Wishlist</a>
+                <a href="#">Gift Ideas</a>
+                <a href="#">Refer a Friend</a>
+                <a href="#">Reviews</a>
+                <a href="#">Scholarship</a>
+                <a href="#">Sponsor</a>
+              </div>
+              <div class="section">
+                <h3>About Us</h3>
+                <a href="#">About</a>
+                <a href="#">Testimonials</a>      
+                <a href="#">The Team</a>  
+                <a href="#">Refer a Friend</a>
+                <a href="#">Reviews</a>
+                <a href="#">Scholarship</a>
+                <a href="#">Sponsor</a>      
+              </div>      
+            </div>
+            <div class="legality">
+              © Copyright 2002 - 2014 Your Company
+            </div>
+          </div>
+
+
+        </div>
+
+      </footer>
+
+      <script src="myjs.js"></script>
+    </body>
+    </html>
